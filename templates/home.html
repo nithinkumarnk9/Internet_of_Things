@@ -3,11 +3,514 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
-    <title>Title</title>
+    <title>INTERNET OF THINGS</title>
     <link href="https:stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
+<style>
+   .parent {
+        position: relative;
+        top: 0;
+        left: 0;
+      }
+      .image1 {
+        position: relative;
+        top: 0;
+        left: 0;
+        border: 1px solid #000000;
+      }
+      .image2 {
+        position: absolute;
+        top: 220px;
+        down: 50px;
+        left: 220px;
+        border: 1px solid #000000;
+      }
+      .card {
+      transition: all 0.3s ease-in-out;
+      }
+    .card:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+    }
+   .card {
+            position: relative;
+            overflow: hidden;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            transition: transform 0.5s ease-in-out;
+        }
+        .card:hover img {
+            transform: scale(1.1); /* Zoom effect */
+        }
+        .overlay-box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out; /* Smooth fade-in */
+        }
+        .card:hover .overlay-box {
+            opacity: 1; /* Show overlay on hover */
+        }
+        .overlay-box h5 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .overlay-box p {
+            font-size: 1rem;
+            margin: 0;
+        }
+    card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+    shadow-transition {
+    transition: box-shadow 03s ease-in-out;
+    }
+    shadow-small:hover {
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    }
+    shadow-medium:hover {
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+    }
+    shadow:large:hover {
+    box-shadow: 0px 12px 30px rgba(0,0,0,0.4);
+    }
+    shadow-inset:hover {
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+    }
+    shadow-colourful:hover {
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+    }
+    shadow-glow:hover {
+    box-shadow: 0px 0px 20px rgba(0, 255, 0, 0.6);
+    }
+    card img {
+    transition: box-shadow 0.3s ease, transform 0.3s ease:
+    }
+    card img:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    transform: scale(1.05);
+    }
+    h1 {
+    font-family: Garamond;
+    p {
+    font-family: Sans-serif;
+    }
+    h5 {
+    font-family:Georgia;
+    }
+    h2 {
+    font-family: Times New Roman;
+    }
+</style>
 <body>
-<h1 class="text center">Welcome to iot</h1>
+<div class="container py-5">
+    <div class="row align-items-center">
+        <!-- Image Section -->
+         <div class="parent">
+      <img class="image1" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcYz-ZIz8htgqNoxTuXyp-mxBLGzSY_bA65F2bw-3r-zevrE0pww7kFq3LQLwoAIgXYlloC7khyphenhyphenU-LTqn5ijqR71zuNWexS5-ZfU0YDBHSvJNSZQHtGVZNgxR9leaMpkyBC85tk1nc5940crrjIDf8rrc8Ktw7JQW__drgAgYnJOQkaXIwlo5PDRmANbVj/s400/6386.jpg_wh300.jpg" />
+      <img class="image2" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjC-6sgDVSESkCdONaBelWHx0hlVQu205WP-Rzb_7tkmmCHqu5HZAwrSFi_1Nv-NLGk38ASSHNFTffu3brBW9EVKOjKrpjKO_jXlsdWGB0Gl6EbHysRX7ICW-VeGzHEw6GypMVQ8lwC0w27ZBYJ02SsrosE89A_uv86GGFKT2rte00p1mCxLLqFzY-tzivN/s275/images%20%2826%29.jpeg" />
+    </div>
+
+        <!-- Right Header Section-->
+        <div class="col-md-6 text-center text-md-start">
+            <h1 class="display-6">Internet of Things</h1>
+            <p class="lead">The network interconnected devices that can communicate with each other and exchange data over the internet. These devices, often equipped with sensors, software, and other technologies, collect and share data to automate processes, improve efficiency, and enhance user experience.IoT is shaping the world into a more connected, automated, and efficient ecosystem.</p>
+        </div>
+        </div>
+    </div>
+
+
+ <section class="py-5 bg-secondary">
+    <div class="container">
+      <h2 class="text-center mb-8">Generations</h2>
+      <div class="row">
+        <!-- First Generation -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card shadow-sm h-100 bg-success text-white">
+            <div class="card-body">
+              <h5 class="card-title">First Generation</h5>
+              <p class="card-text">
+                Focused on single-purpose devices like RFID tags and sensors, operating in isolation.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Second Generation -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card shadow-sm h-100 bg-info text-white">
+            <div class="card-body">
+              <h5 class="card-title">Second Generation</h5>
+              <p class="card-text">
+                Devices connected to networks, introducing protocols like Zigbee and Wi-Fi.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Third Generation -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card shadow-sm h-100 bg-primary text-white">
+            <div class="card-body">
+              <h5 class="card-title">Third Generation</h5>
+              <p class="card-text">
+                Fully connected ecosystems leveraging cloud, AI, and edge computing.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Future Generation -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card shadow-sm h-100 bg-dark text-white">
+            <div class="card-body">
+              <h5 class="card-title">Future Generation</h5>
+              <p class="card-text">
+                Hyper-connected AI-powered IoT with autonomous and predictive capabilities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="py-5 bg-primary">
+ <div class="container py-5">
+        <h1 class="text-center text-primary mb-5">Image Hover Overlay Effect</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIxCdIOg0RkaVXZ-r7twpVaatsBoCtkftU5WGlp-z05aKpv12ioPViaz5NslcmFEv1b5q5A_-O7rmCdahRr336d3ju3DjUh4Zn4SxBgqB55Jk2cgnycl3rtuoVc4UlnDOGYy0LUzNr4l4eFgZmLF1Xx17t0R53eoenifYq2-pV8NhzkyH_hcGY9XM_Jc1z/s1600/1Sensors_img-1645633720457.webp" class="card-img" alt="IoT Sensors">
+                    <div class="overlay-box">
+                        <h5>IoT Sensors</h5>
+                        <p>Sensors gather data such as temperature, motion, or light.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col">
+                <div class="card">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmuPUUP3uSNcczWO009RZVs8EegGHBZjMaLlZiNqE9SSX2oDS3t2mJUkTCATZWfI_EsHySrCu9bahOpFWCdbT4IbxYL-LGrXRa0v4b5Xjyora_lgc-wEb9fYxvo8kUtp57hXJ3XgA-7e1BOEfEwrunZ1bdJ7CpQI3jNCwmynDpVlrI51LZwKbOo5mPLyFB/s509/blog-con2.png" class="card-img" alt="IoT Network">
+                    <div class="overlay-box">
+                        <h5>Network Connectivity</h5>
+                        <p>Data is transmitted securely to cloud platforms or devices.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLUcVW8jmT62eRgdYLz5jPvJxqenbM9toZ8r63jIGVynt_4jQ6KtR5g4dKQBDvp7jlj8Ok3Vf6VfFeNn0hdRKG5uFxwng9VmpIiJg8kne7biQoN4qhRYSi_W7WxnfW8egs6GiNblY3dIOhX62GRnoiOt-E5zcmswCgXczL5-JB9spJuvRh7GdAb6P5iIMs/s246/images%20%283%29.png" class="card-img" alt="IoT Processing">
+                    <div class="overlay-box">
+                        <h5>Data Processing</h5>
+                        <p>Cloud platforms analyze and process the collected data.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <div class="container my-5">
+    <h1 class="text-center">Growth of IoT Across Generations</h1>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <table class="table table-bordered table-striped">
+          <thead class="table-dark">
+            <tr>
+              <th>Generation</th>
+              <th>Year Range</th>
+              <th>Key Features</th>
+              <th>Connected Devices (Billions)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1st Generation</td>
+              <td>1990s–2000s</td>
+              <td>RFID, Basic Sensors</td>
+              <td>0.5</td>
+            </tr>
+            <tr>
+              <td>2nd Generation</td>
+              <td>2010s</td>
+              <td>Cloud Connectivity, Smartphones, Smart Devices</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>3rd Generation</td>
+              <td>2020s</td>
+              <td>Edge Computing, 5G, AI Integration</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>4th Generation (Future)</td>
+              <td>2030s</td>
+              <td>Autonomous Systems, Smart Cities, Quantum IoT</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>5th Generation (Beyond)</td>
+              <td>2040s+</td>
+              <td>Advanced IoT Ecosystem, Universal Connectivity</td>
+              <td>75</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+             </div>
+</section>
+<div class="container my-5">
+    <h1 class="text-center mb-4">Architecture</h1>
+    <div class="row text-center">
+        <!-- Perception layer -->
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h5 class="card-title">Perception Layer</h5>
+                    <p class="card-text">Includes sensors, RFID, and actuators to collect and transmit data from the physical world.</p>
+                </div>
+                <div class="card-footer text-muted">
+                    <small>Example: Temperature Sensors</small>
+                </div>
+            </div>
+        </div>
+        <!-- Network Layer -->
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card shadow bg-primary text-white">
+                <div class="card-body">
+                    <h5 class="card-title">Network Layer</h5>
+                    <p class="card-text">Handles data transmission using networks like Wi-Fi, 5G, Zigbee, or Bluetooth.</p>
+                </div>
+                <div class="card-footer text-muted">
+                    <small>Example: 5G Communication</small>
+                </div>
+            </div>
+        </div>
+        <!-- Processing Layer -->
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card shadow bg-success text-white">
+                <div class="card-body">
+                    <h5 class="card-title">Processing Layer</h5>
+                    <p class="card-text">Analyzes and processes data using cloud computing, edge computing, or IoT platforms.</p>
+                </div>
+                <div class="card-footer text-muted">
+                    <small>Example: AWS IoT Core</small>
+                </div>
+            </div>
+        </div>
+        <!-- Application Layer -->
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card shadow bg-info">
+                <div class="card-body">
+                    <h5 class="card-title">Application Layer</h5>
+                    <p class="card-text">Provides specific services such as smart homes, industrial IoT, or healthcare applications.</p>
+                </div>
+                <div class="card-footer text-muted">
+                    <small>Example: Smart Home Automation</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container py-5">
+    <h2 class="text-center">Present and Future Generations</h2>
+    <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3adFSHiqITNuaE9LS7VlJP6t7qTiRpZgJeOQ94CWn1W2bI8uR6_FZRo9opjrUho1fDQkmmcHKWcJMhsH8IcTC76k598FsjDQFepPLIoYNguir0HYsrAwZ4ngHnearlQHOBe_6RuceiTY4iJxmLnQihxfmDkhKfN51sxWOj61Mkr8YQlyB3nyOnViEIJJ2/s1200/AI-in-IoT-Security-20-Jan-2024.webp" class="card-img-top" alt="Card Image">
+                <div class="card-body">
+                    <h5 class="text-center">AI-Enhanced IoT (AIoT)</h5>
+                </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwBPgf76_ILWYjGmSpC6nMUZE1BpMlHYA3ImHPn5WKSn_h46-kaf68ekmNDJLgiHkgkCxlgK21JAHB0SjB2Mr3oAJw9DPmOXwHX1Z-DUjr8Uof2D__M9lVvi68yu6aKkElzJi4tfIizkjv910WKNGcd4v_zCu9gmUiAM7Qd0KwmI5rfgUq5C-E0VeZGmwR/s1498/blockchain-iot.jpg" class="card-img-top" alt="card image">
+                <div class="card-body">
+                    <h5 class="card-title">Block Chain</h5>
+                </div>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi53qDG6jXEPklFSIQTLaFhj9tQu1YFSHy374AihnCjISdh8ryPg-sZYhWVjexuYfoHzBkJTTPgxYvJsSpGGVC89Ch1WK4PePWWkWcFgrxUkJPmUsFWyRtWCHQ4V02Pzj1YAeFwToDL5mdpd3DcetgbMKwSR7BnMIPPGxpVgGdv0iqzeqn4Tf9DhOLZVx-K/s1024/Real-Life-Use-Cases-for-Edge-Computing_1024X684.webp" class="card-img-top" alt="card image">
+                <div class="card-body">
+                    <h5 class="card-title">Edge Computing</h5>
+                </div>
+            </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAXtW8vsHcSZ-lXgq_rCdJQtPMGaw_Fy8A6LGkEFuLzoWz8QdipkSqEvzw4TZ3HEolo5Aow-NySq4HNnSBJG_pkHjf0Rzh1baq3LXuDQAK-P7zYW3jN13MNcWaVDfCzp-2z2P40G5ghj2Y6cRdQn48EBdV3yZZiLvJSQ57lJXsl9sBloSOXtQQpTZbBSVd/s311/images%20%287%29.jpg" class="card-img-top" alt="card image">
+                <div class="card-body">
+                    <h5 class="card-title">IOT Digital Twins</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container py-5">
+    <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGZjID-bwq8agatNOTeFOA-m8t2Pbr4BAf8WPY49C15hNnhyTEbpGjTWwaNkw3_0iD-NteJtME-BAp19VTVsch5Z6_FtT70INst14FFcCs-AGzUfKK7EnpnVXqw0PO8jjhpwZWnXA3Zc8AoPrAd3stCGWrNsELN2oUji_CnuaBmCnko20mvf2P8ij5k8ni/s986/Quantum-IoT-Platform.png" class="card-img-top" alt="card image">
+                    <div class="card-body">
+                        <h5 class="card-title">Quantum IoT</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjR4wBOc7UDu3413CS1vB72j49q1nqpkUDM9kvJXPPBmpaWhB_WFWabmeYmm9GWl8OLdeQ4E9KHQ-mReogwGJqs54GgHhWm_TMQf7a-KywqPU6cmqtJd0BP3q76IZ7S3zGNI7z2V9jTYWe2bf7VsyWobx03WkQQUPNN_NcZ2ewj6Jb1kKPsqf7K_vPjfj5C/s800/tti-me-bhatt-green-iot800x500.jpeg" class="card-img-top" alt="card image">
+                    <div class="card-body">
+                        <h5 class="card-title">Green IoT</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhooEOcta6l2jYd_kvEe7_MikHMPQIjpGXiAsB05S1HolvWDLw859OnIJq2aJRkh4ht25HH6Cq9QoGzH_vIIg7f1XNUfNwD9iGwa8CjI4mB2tIRlTLHN0KQygvr_xOQlLQmlXYYMr_rnw-sDc1oIaIEYF3FsLW1Ls6B65wKv4TWuop5Clpm2Ib8ElNPiX_w/s872/Fog-computing_01.jpg" class="card-img-top" alt="card image">
+                    <div class="card-body">
+                        <h5 class="card-title">Fog Computing</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBT66pD7MZImgnglY_blHG0ZnkUHfhmEF5Kp1Ked4h7AQ5nSyaYQESY_eVd-ORe2GH9zMhVzkQxkn2f_rjDuoHvvWYlDfiWUhc1qWb3_Q0WA4SLXyJa4CnA4ADNepBzMFPKe6zPN-_gJjYfQCVQBxubFBLbZPRAA5ZkhNBB46gXhTXX61gzegrK_Ljc3mG/s1280/1703215108972.png" class="card-img-top" alt="card image">
+                    <div class="card-body">
+                        <h5 class="card-title">Ambient Intelligence (AML)</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="py-5 bg-secondary">
+    <div class="container mt-4">
+        <h3 class="text-center">Advantages of IoT</h3>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <strong>1.Enhanced Efficiency:</strong> Automates processes, reducing human intervention and saving time.
+            </li>
+            <li class="list-group-item">
+                <strong>2. Cost Savings:</strong> Optimizes resource usage and reduces operational costs through smart solutions.
+            </li>
+            <li class="list-group-item">
+                <strong>3. Improved Decision-Making:</strong> Real-time data collection enables better and faster decisions.
+            </li>
+            <li class="list-group-item">
+                <strong>4. Better Customer Experience:</strong> offers personalized services and improved interactions.
+            </li>
+            <li class="list-group-item">
+                <strong>5. Enhanced Safety:</strong> IoT-powered sensors improve safety through early detection and alerts.
+            </li>
+        </ul>
+        <h3 class="text-center mt-5">Disadvantages of IoT</h3>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <strong>1. Security Issues:</strong> IoT devices are vulnerable to hacking and data breaches.
+            </li>
+            <li class="list-group-item">
+                <strong>2. Privacy Concerns:</strong> Extensive data collection can infringe on user privacy.
+            </li>
+            <li class="list-group-item">
+                <strong>3. Compatibility Challenges:</strong> Different manufactures devices may not work seamlessly together.
+            </li>
+            <li class="list-group-item">
+                <strong>4. High Initial Costs:</strong> Setting up IoT infrastructure can be expensive.
+            </li>
+            <li class="list-group-item">
+                <strong>5. Dependency on Connectivity:</strong> IoT systems rely heavily on stable internet connections.
+            </li>
+        </ul>
+    </div>
+</section>
+
+<div class="container my-5">
+    <div class="row g-4">
+        <!-- card 1 -->
+        <div class="col-md-4 col-lg-3">
+            <div class="card">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7LztsOG7mdxWudLkxL4WseWxHL4JW0dNS7TicBRRYUCWC7TfzDAge3ocQ1evlpo0JiYibGdx2FQnHKWviV8oTklidUseZYtURMn84zXsjBOjJAdAvRAdGAsGjlpkOeg8gexk730pIqbfODwd4-XOIng8VnXFA7Z4ZTAtjAgA7AiBblaUCnqmQQ6kGmlF5/s262/images%20%288%29.jpg" class="card-img-top" alt="placeholder">
+                <div class="card-body">
+                    <h5 class="card-body">Smart Home</h5>
+                </div>
+            </div>
+        </div>
+        <!-- Repeats for 4 cards -->
+        <div class="col-md-4 col-lg-3">
+            <div class="card">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjkFYS5vqn0kVulr1O7ZMeeMLlP992lGSIZfNDKQRqmBfYDTykQfYxLuzP3OvZREz8LD8PBsNlptRVyyzUWPWdg5D8Jftyrde0NK1r4Ppt54Er2hrxn5VKOA4IpxKeIdNkhEtGQitQqqu6vPGUkHxCSez1oKQ7Yq8Koj2rHPcX7CYme_UxV-TRn4LtqSLTh/s1121/IoT-based-Air-Pollution-Monitoring-System.png" class="card-img-top" alt="placeholder">
+                <div class="card-body">
+                    <h5 class="card-title">Smart Pollution Control</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-lg-3">
+            <div class="card">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7MBdojJqiv8P0x_anweTYi7p5iM6XN5rVBNTZOUZBaNI2akAb5Q6tDJ91_KCH44AeprJ1pYTosK4SRD9OMjFYEvWvdnw4fEKQbDfQhFYD72ExjRSsb8LoxCtAJBkpgzhQdjPdlEia6oGzBaABwck9FGaX_bxh379O5X-52FWRp3vsQMXiC8ZSmOUiFfw_/s269/images%20%289%29.jpg" class="card-img-top" alt="placeholder">
+                <div class="card-body">
+                    <h5 class="card-title">Smart Cities</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-lg-3">
+            <div class="card">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEib8qCKzYDLnL_8U12A1kfIs5i4nNKWVhIoN5hPcgQ4P-epch8jQljrJ33TSjV01evkWNJZqRyy57AMW4Urs7fdTpiay2dy8gRCtANRmjA6RMGhwNOQoUjpaVi84TgQplj7Na-dA8rRPbIXfOkTrAVZ4TTR9ckHD8cVihtTtcQsmXBfihLfc30MYgHGFyP-/s850/IoT-farming.jpg" class="card-img-top" alt="placeholder">
+                <div class="card-body">
+                    <h5 class="card-title">Smart Agriculture</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-lg-3">
+            <div class="card">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRGgAApf0j5ir6sMJA0k8Te7993IoLjHYwWrgzLp1jToCO5saD6hjT97snU-GaXdOkYR8z85-rVmQBb8Kyyimq81HTnmGUuPp07jY5sU0HlseWqqM5hEMv-OXJyhSORfMXtTZAIHmeigcW39l-2d0XzVrmiirx5BC3SqeGB2OONH0QLQQHcjnbgL01luzJ/s512/smart-vehicles1.png" class="card-img-top" alt="placeholder">
+                <div class="card-body">
+                    <h5 class="card-title">Smart Vehicles</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-lg-3">
+            <div class="card">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqRg0mb-p72rEVPKkszN-G-WjQTgGlOzNVikvUlI6kAOhuq2AC17SH8shS2v1G42984by35rsPN1VfY7T4Zhrb1fGIErnZ2205Q-ycHr6M1Eiu83B2tbgOl1En-t19x8ylNvWwoJXObtDFfYdu3ZIcrFUMEJzzRZIbb_ILkT-u5aZM1L5ENt7zFKby_s6K/s1293/Untitled-design-107.webp" class="card-img-top" alt="placeholder">
+                <div class="card-body">
+                    <h5 class="card-title">Smart Healthcare</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="bg-primary text-white text-center py-3">
+    <p>&copy; 2024 Internet of Things. All rights reserved.</p>
+</footer>
 <!-- Bootstrap JS and dependencies -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
